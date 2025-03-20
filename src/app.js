@@ -14,15 +14,15 @@ window.onload = function() {
 
 let htmlTxt = document.querySelector('#excuse')
 const randomNum2 = function(){
-  let num = Math.floor(Math.random() * 2) + 1
+  let num = Math.floor(Math.random() * 3) 
   return num;
 }
 const randomNum3 = function(){
-  let num = Math.floor(Math.random() * 3) + 1
+  let num = Math.floor(Math.random() * 4)
   return num;
 }
 const randomNum4 = function(){
-  let num = Math.floor(Math.random() * 4) + 1
+  let num = Math.floor(Math.random() * 5)
   return num;
 }
 htmlTxt.innerHTML = `${who[randomNum3()]} ${action[randomNum3()]} ${what[randomNum2()]} ${when[randomNum4()]}`
