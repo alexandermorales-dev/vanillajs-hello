@@ -13,17 +13,11 @@ window.onload = function() {
   let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch', 'while I was praying'];
 
 let htmlTxt = document.querySelector('#excuse')
-const randomNum2 = function(){
-  let num = Math.floor(Math.random() * 3) 
+const randomNum = function(arr){
+  let num = Math.floor(Math.random() * (arr.length)) 
   return num;
 }
-const randomNum3 = function(){
-  let num = Math.floor(Math.random() * 4)
-  return num;
+
+htmlTxt.innerHTML = `${who[randomNum(who)]} ${action[randomNum(action)]} ${what[randomNum(what)]} ${when[randomNum(when)]}`
 }
-const randomNum4 = function(){
-  let num = Math.floor(Math.random() * 5)
-  return num;
-}
-htmlTxt.innerHTML = `${who[randomNum3()]} ${action[randomNum3()]} ${what[randomNum2()]} ${when[randomNum4()]}`
-};
+
